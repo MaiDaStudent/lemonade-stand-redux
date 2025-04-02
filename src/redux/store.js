@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import profitReducer from "./profitSlice"; // Sørg for at denne sti er korrekt!
+import profitReducer from "./profitSlice";
+import cartReducer from "./cartSlice";
 
 const store = configureStore({
   reducer: {
-    profit: profitReducer, // Sørg for at reduceren hedder det samme som i useSelector
+    profit: profitReducer,
+    cart: cartReducer,
   },
 });
 
